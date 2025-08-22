@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Day Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <header class="todo-header">
+                <h1>My Todo List</h1>
+                <p class="subtitle">Stay organized and productive</p>
+            </header>
+
+            <div class="todo-input-container">
+                <input 
+                    type="text" 
+                    id="todoInput" 
+                    class="todo-input" 
+                    placeholder="Add a new task..."
+                    autocomplete="off"
+                >
+                <button id="addTodoBtn" class="add-btn">Add</button>
+            </div>
+
+            <div class="filter-container">
+                <button id="btnAll" class="filter-btn active" data-filter="all">All</button>
+                <button id="btnActive" class="filter-btn" data-filter="active">Active</button>
+                <button id="btnCompleted" class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <ul id="todoList" class="todo-list">
+                <!-- Todo items will be dynamically added here -->
+                <!-- Sample todos for demonstration -->
+                
+            </ul>
+
+            <div class="todo-footer">
+                <span id="itemsLeft" class="items-left"> <span id="remaining-count">0</span> items left</span>
+                <button id="clearCompletedBtn" class="clear-completed">Clear Completed</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
